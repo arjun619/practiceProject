@@ -1,4 +1,4 @@
-import {DataTypes, Model} from "sequelize";
+import {DataTypes, Model, Sequelize} from "sequelize";
 import {sequelize} from "../database/dbSequelize";
 
 
@@ -17,6 +17,11 @@ User2.init(
         },
         email: {
             type: DataTypes.STRING,
+            allowNull: false
+        },
+        createdDate: {
+            type: DataTypes.DATE,
+            defaultValue: DataTypes.NOW,
             allowNull: true
         }
     },
