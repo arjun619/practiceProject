@@ -1,8 +1,8 @@
 import express , {Request, Response} from 'express';
-import { router } from './routes/userRoutes';
+import { router } from './serviceController/unusedFiles/userRoutes';
 import {sequelize} from "./database/dbSequelize";
 import {Controller} from "../../common/Controller";
-import {userController} from "./routes/userController";
+import {userController} from "./serviceController/userController";
 
 
 const app = express();
